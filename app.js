@@ -9,7 +9,9 @@ app.use(function(req, res, next) {
     next()
   })
 app.get('/', (req, res) =>{
-    res.send("Welcomssssssssss");
+    return res.status(200).json({
+        message: "holi"
+      });
 });
 
 const port = process.env.port || 4500
